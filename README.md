@@ -7,29 +7,17 @@ It takes data in the format listed below, and outputs the proportion of h's (het
 Taxa1 and Taxa2 are segregating genotypes for each of the two populations and can be stripped from a plink association test output.
 
 taxa1	taxa2	hybrid
-
 1	0	0
-
 1	0	0
-
 1	0	0
-
 1	0	0
-
 1	0	1
-
 1	0	1
-
 1	0	1
-
 1	0	1
-
 1	0	h
-
 1	0	h
-
 1	0	h
-
 1	0	h
 
 The script below runs fine in Python 3, just paste the script into python all in one go...
