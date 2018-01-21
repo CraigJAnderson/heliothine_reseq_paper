@@ -8,16 +8,27 @@ Taxa1 and Taxa2 are segregating genotypes for each of the two populations and ca
 
 taxa1	taxa2	hybrid
 1	0	0
+
 1	0	0
+
 1	0	0
+
 1	0	0
+
 1	0	1
+
 1	0	1
+
 1	0	1
+
 1	0	1
+
 1	0	h
+
 1	0	h
+
 1	0	h
+
 1	0	h
 
 The script below runs fine in Python 3, just paste the script into python all in one go...
