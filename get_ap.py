@@ -16,4 +16,4 @@ def get_pa(snps):
 	cou_h = per.count('h')
 	print(cou_h)
 	print(cou_b)
-	print((cou_b+cou_h)/(cou_a+cou_b+cou_h))
+	print(((2*cou_b)+cou_h)/((2*cou_a)+(2*cou_b)+cou_h))
