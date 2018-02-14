@@ -29,7 +29,7 @@ The variants.txt file is in the following format:
 -snp_name is the name of the SNP, it can ber anything, just no repeats
 -sample is the sample specific genotype calls, where 1 is homo REF, 0.5 is a het and 0 is homo ALT.
 
-bin	chr	bp	snp_name	sample
+bin	chr	bp	snp_name	sample<br>
 2_1	2	26991	2:26991[b37]C,T	1
 2_1	2	27401	2:27401[b37]G,T	0
 2_1	2	27661	2:27661[b37]C,T	0
