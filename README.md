@@ -17,10 +17,11 @@ Enjoy!! If you think there can be improvements, drop me a line. :-)
 ________________________________________________________
 # 2. Hybrid Index
 
-- Use bedtools to break up the genome into predetermined window lengths.
+Use bedtools to break up the genome into predetermined window lengths.<br>
 bedtools makewindows -b armigera.bed -w 250000 > genome_windows.txt
 
-Use the script hybridindex.py variants.txt genome_windows.txt
+Use the script: <br>
+hybridindex.py variants.txt genome_windows.txt
 
 The variants.txt file is in the following format:<br>
 -bin is the window that the SNP falls in<br>
