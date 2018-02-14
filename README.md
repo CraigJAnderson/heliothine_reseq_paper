@@ -22,12 +22,12 @@ bedtools makewindows -b armigera.bed -w 250000 > genome_windows.txt
 
 Use the script hybridindex.py variants.txt genome_windows.txt
 
-The variants.txt file is in the following format:
--bin is the window that the SNP falls in
--chr is chromosome
--bp is position of the SNP on the chromosome
--snp_name is the name of the SNP, it can ber anything, just no repeats
--sample is the sample specific genotype calls, where 1 is homo REF, 0.5 is a het and 0 is homo ALT.
+The variants.txt file is in the following format:<br>
+-bin is the window that the SNP falls in<br>
+-chr is chromosome<br>
+-bp is position of the SNP on the chromosome<br>
+-snp_name is the name of the SNP, it can ber anything, just no repeats<br>
+-sample is the sample specific genotype calls, where 1 is homo REF, 0.5 is a het and 0 is homo ALT.<br>
 
 bin	chr	bp	snp_name	sample<br>
 2_1	2	26991	2:26991[b37]C,T	1<br>
