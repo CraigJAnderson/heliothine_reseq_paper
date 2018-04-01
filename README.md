@@ -23,12 +23,11 @@ bedtools makewindows -b armigera.bed -w 250000 > genome_windows.txt
 Use the script: <br>
 hybridindex.py variants.txt genome_windows.txt out_window_averages
 
-The variants.txt file is in the following format:<br>
--bin is the window that the SNP falls in<br>
+The variants.txt file (example below) is in the following format:<br>
 -chr is chromosome<br>
 -bp is position of the SNP on the chromosome<br>
 -snp_name is the name of the SNP, it can ber anything, just no repeats<br>
--sample is the sample specific genotype calls, where 1 is homo REF, 0.5 is a het and 0 is homo ALT.<br>
+-sample is the sample specific genotype calls, where 1 is homo REF, 0.5 is a het and 0 is homo ALT. This can easily be stripped from a vcf, with the sample column being derived from a conversion of allele calls using sed<br>
 
 chr	bp	snp_name	sample<br>
 2	26991	2:26991[b37]C,T	1<br>
@@ -42,3 +41,4 @@ chr	bp	snp_name	sample<br>
 2	47673	2:47673[b37]A,G	0<br>
 2	53660	2:53660[b37]A,G	1<br>
 
+The output is a column of the bins (chr_bp) and another reporting the mean hybrid index for each bin.
