@@ -20,9 +20,6 @@ ________________________________________________________
 Use bedtools to break up the genome into predetermined window lengths.<br>
 bedtools makewindows -b armigera.bed -w 250000 > genome_windows.txt
 
-Use the script: <br>
-hybridindex.py variants.txt genome_windows.txt out_window_averages
-
 The variants.txt file (example below) is in the following format:<br>
 -chr is chromosome<br>
 -bp is position of the SNP on the chromosome<br>
@@ -40,5 +37,9 @@ chr	bp	snp_name	sample<br>
 2	46765	2:46765[b37]G,T	0<br>
 2	47673	2:47673[b37]A,G	0<br>
 2	53660	2:53660[b37]A,G	1<br>
+
+Use the script: <br>
+hybridindex.py -v variants.txt -g genome_windows.txt -o out_window_averages
+
 
 The output is a column of the bins (chr_bp) and another reporting the mean hybrid index for each bin.
